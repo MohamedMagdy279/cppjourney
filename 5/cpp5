@@ -1,0 +1,74 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string Name;
+    int Age;
+    string City;
+    string Country;
+    float MonthlySalary;
+    char Gender;
+    bool isMarried;
+
+    cout << "Please enter Your Name? " << endl;
+    cin >> Name;
+
+    cout << "Please enter Your Age? " << endl;
+    cin >> Age;
+
+    cout << "Please enter Your City? " << endl;
+    cin >> City;
+
+    cout << "Please enter Your Country? " << endl;
+    cin >> Country;
+
+    cout << "Please enter Your Monthly Salary? " << endl;
+    cin >> MonthlySalary;
+
+    cout << "Please enter Your Gender M/F? " << endl;
+    cin >> Gender;
+
+    cout << "Are you married? 1/0 ? " << endl;
+    cin >> isMarried;
+
+    cout << "\n*************************************\n";
+    cout << "Name: " << Name << endl;
+    cout << "Age: " << Age << endl;
+    cout << "City: " << City << endl;
+    cout << "Country: " << Country << endl;
+    cout << "Monthly Salary: " << MonthlySalary << endl;
+    cout << "Yearly Salary: " << MonthlySalary * 12 << endl;
+    cout << "Gender: " << Gender << endl;
+    cout << "Married: " << isMarried << endl;
+    cout << "*************************************\n";
+
+  
+    //second prog
+
+    int i1, i2, i3;
+
+    cin >> i1;
+    cin >> i2;
+    cin >> i3;
+
+    cout << i1 <<"+" << endl;
+    cout << i2 << "+" << endl;
+    cout << i3 << endl;
+
+    cout << "---------------\n";
+
+    cout << "Total= " << i1 + i2 + i3;
+
+    //third prog
+
+    int age;
+    cin >> age;
+    int newage = 5 + age;
+    cout << "after 5 years you will be " << newage << "years old" << endl;
+
+    return 0;
+
+
+}
