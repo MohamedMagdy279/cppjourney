@@ -1,0 +1,34 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string name = "Mohamed Abu-Hodhoud";
+	int Age = 44;
+	string city = "Amman";
+	int monthlysalary = 5000;
+	int yearlysalary = 60000;
+	char gender = 'M';
+	int married = 1;
+	cout << "******************\n";
+	cout << "Name: " << name <<endl;
+	cout << "Age: " << Age << endl;
+	cout << "City: " << city << endl;
+	cout << "Monthly Salary: " << monthlysalary << endl;
+	cout << "Yearly Salary: " << yearlysalary << endl;
+	cout << "Gender: " << gender << endl;
+	cout << "Married: " << married << endl;
+	cout << "******************\n";
+
+	cout << "\n\n\n";
+
+	int i1 = 20, i2 = 30, i3 = 10;
+	cout << "total =" << i1 + i2 + i3 <<endl;
+
+	cout << "\n\n\n";
+
+	int age = 25;
+	cout << "after 5 years you will be " << age << "years old";
+	
+}
