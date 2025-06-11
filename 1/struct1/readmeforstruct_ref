@@ -1,0 +1,65 @@
+✅ Summary: Pass-by-Value vs. Pass-by-Reference in C++
+Here's a clear and simple summary of the two concepts, especially for when you're passing a struct like strInfo to a function such as PrintInfo.
+
+🔹 1. Pass-by-Value
+void PrintInfo(strInfo Info)
+void PrintInfo(strInfo Info)
+📌 What it does:
+Makes a copy of the object.
+The function works with that copy , not the original.
+✅ Pros:
+Safe: Changes inside the function do not affect the original data.
+Simple concept.
+❌ Cons:
+Inefficient : Copies take memory and time.
+Not good for large or complex data structures.
+🔹 2. Pass-by-Reference
+
+void PrintInfo(strInfo &Info)      // Can modify original
+void PrintInfo(const strInfo &Info) // Cannot modify original
+📌 What it does:
+Works directly on the original object .
+No copying happens → faster and more efficient .
+✅ Pros:
+Efficient : No copy is made.
+Good for big objects (like structs with many fields).
+Using const ensures safety (prevents accidental changes).
+❌ Cons:
+If not using const, function can accidentally change the original data.
+🟩 Best Practice for Your Case
+Since your function only prints the data (doesn’t change it), this is best:
+
+void PrintInfo(const strInfo &Info)
+You get the performance benefit of no copying .
+You protect the original data by using const.
+🧾 Quick Comparison Table
+🧾 Quick Comparison Table
+Copies object
+✅ Yes
+❌ No
+Can change original data
+❌ No (it’s a copy)
+✅ Yes (unless
+const
+)
+Efficiency
+❌ Slower (due to copying)
+✅ Faster
+Safety
+✅ Safer (original untouched)
+✅ Safe with
+const
+Best use case
+Small/simple types
+Large/complex types, read-only access
+🎯 Final Answer
+Use this version for printing:
+cpp
+
+
+1
+void PrintInfo(const strInfo &Info)
+Why?
+It’s fast (no copying),
+It’s safe (can’t accidentally change data),
+It’s the best practice in C++ for reading data.
